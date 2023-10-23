@@ -1,0 +1,20 @@
+﻿@model HomeViewModel
+
+@{
+    ViewData["Title"] = "Found Page";
+}
+
+<div class="text-center ">
+    <div class="container">
+    <h1 class="display-4">Перевод в римские числа</h1>
+    <form  asp-action="Index"  asp-area="" method="get">
+    <p>Введите число от 1 до 3999 </p>
+    <input  type="number" max="3999" min="1" value="@Model.number" active="false"/> 
+    <button type="submit" id="button-found">Сбросить</button>
+    <p>Результат: @Model.romeNumber</p>
+
+    </form>
+    </div>
+
+
+</div>
